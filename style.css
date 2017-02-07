@@ -2,7 +2,24 @@ body {
 	font-family: 'Overpass', sans-serif;
 }
 
+#quiz {
+	margin-left: 15px;
+	background: #ccffee;
+	padding: 10px;
+	width: 450px;
+	border-radius: 17px;
+	float: left;
+
+}
 #after_submit {
 	visibility: hidden;
+	margin-left: 5px;
+	background: #cc9900;
+	border-radius: 19px;
+	float: left;
 
+}
+
+img {
+	height: 200px
 }

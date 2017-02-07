@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>Quick and easy random quiz!</title>
+<title>Quick and easy quiz!</title>
 <link href ="style.css" rel ="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
 <script src = "main.js"></script>
@@ -17,8 +17,9 @@
 <form id = "quiz" name = "quiz">
  
 
-<p>What is a left handed shell and how rare are they? (I'll give you it hint: it's 10x10 -10 +5.) </p>
+<p>How rare are left handed SHELLS? (I'll give you it hint: it's 10x10 -10 +5 -90, with the word 'percent' after it.) </p>
 <input id = "textbox" type = "text" name = "question1">
+of all shells are left handed.
 
 <p>What is the smallest amount of triangles that can fit into a square? Draw a picture if you need to in order to help you!</p>
 <input type = "radio" id = "mc" name = "question2" value = "2triangles."> At least 2 triangles.<br>
@@ -28,9 +29,9 @@
 
 <p>Which of the following is a palendrome? Use a piece of paper to help you!</p>
 
-<input type = "radio" id = "mc" name = "question3" value = "Tacocat."> Tacocat is a palendrome.<br>
-<input type = "radio" id = "mc" name = "question3" value = "Racecar."> Racecar is a palendrome.<br>
-<input type = "radio" id = "mc" name = "question3" value = "DadandMom."> Dad and Mom are both palendromes.<br>
+<input type = "radio" id = "mc" name = "question3" value = "Tacocat."> <em>Tacocat</em> is a palendrome.<br>
+<input type = "radio" id = "mc" name = "question3" value = "Racecar."> <em>Racecar</em> is a palendrome.<br>
+<input type = "radio" id = "mc" name = "question3" value = "DadandMom."> <em>Dad</em> and <em>Mom</em> are both palendromes.<br>
 <input type = "radio" id = "mc" name = "question3" value = "All."> All of the above are palendromes!<br>
 <input type = "radio" id = "mc" name = "question3" value = "Dontknow."> I don't know what a palendrome is!<br>
 
@@ -43,6 +44,7 @@
 
 <p id = "message"></p>
 <p id = "number_correct"></p>
+<img id = "picture">
 </div>
 </html>
 

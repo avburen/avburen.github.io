@@ -15,7 +15,8 @@ var correct = 0;
 		correct++;
 	}
 
-var messages = ("Great job!", "You tried","Try again");
+var messages = ["Great job!", "You did well, but not 100%. C'mon, really think!!","Try again. You can do it!!"];
+var pictures = ["img/win.gif","img/decent_job_gif.gif", "img/fail.gif"]
 
 var range;
 
@@ -23,13 +24,19 @@ var range;
 		range = 2;
 	}
 	
-	if (correct > 0 && correct > 3) {
-		range = 2;
-}
+	if (correct > 0 && correct < 3) {
+		range = 1;
+	}
+	
+	if (correct > 2) {
+		range = 0;
+	}
+
 document.getElementById("after_submit").style.visibility = "visible";
 
 
 
 document.getElementById("message").innerHTML = messages[range];
-document.getElementById("number_correct").innerHTML = "You got " + correct + "correct.";
+document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+document.getElementById("picture").src = pictures[range];
 }
