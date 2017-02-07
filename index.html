@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Quick and easy random quiz!</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+<script src = "main.js"></script>
+
+</head>
+
+
+<body>
+
+<h1>Take a random quiz! You never know what you may have to answer...</h1>
+
+<form id = "quiz" name = "quiz">
+ 
+
+<p>What is a left handed shell and how rare are they? (I'll give you it hint: it's 10x10 -10 +5.) </p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p>What is the smallest amount of triangles that can fit into a square? Draw a picture if you need to in order to help you!</p>
+<input type = "radio" id = "mc" name = "question2" value = "2triangles."> At least 2 triangles.<br>
+<input type = "radio" id = "mc" name = "question2" value = "3triangles."> At least 3 triangles.<br>
+<input type = "radio" id = "mc" name = "question2" value = "4triangles."> At least 4 triangles.<br>
+<input type = "radio" id = "mc" name = "question2" value = "More."> More than all of these.<br>
+
+<p>Which of the following is a palendrome? Use a piece of paper to help you!</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Tacocat."> Tacocat is a palendrome.<br>
+<input type = "radio" id = "mc" name = "question3" value = "Racecar."> Racecar is a palendrome.<br>
+<input type = "radio" id = "mc" name = "question3" value = "DadandMom."> Dad and Mom are both palendromes.<br>
+<input type = "radio" id = "mc" name = "question3" value = "All."> All of the above are palendromes!<br>
+<input type = "radio" id = "mc" name = "question3" value = "Dontknow."> I don't know what a palendrome is!<br>
+
+<input id = "button" type = "button" value = "I'm ready! (Or are you? Check your work now!)"" onclick = "check()";>
+
+
+</form>
+
+<div id = "after_submit">
+
+<p id = "message"></p>
+<p id = "number_correct"></p>
+</div>
+</html>
+
+</body>
+
+</html>
